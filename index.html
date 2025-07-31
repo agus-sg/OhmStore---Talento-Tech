@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhmStore - Acompañando tus proyectos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Ohm<span>Store</span></a>
+
+        <form>
+            <div class="busqueda">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-input" type="search" placeholder="Buscar">
+            </div>
+        </form>
+   
+        <nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+           <a href="#" id="carrito" class="fas fa-shopping-cart">
+           <span id="contador-carrito">0</span>
+           </a>
+            <a href="#" class="fas fa-location-dot"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+        </nav>
+
+    </header>
+
+    <div id="panel-carrito" class="carrito-panel">
+    <h3>Tu carrito</h3>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0</p>
+    <button id="cerrar-carrito">Cerrar</button>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="categorias">
+                <h1>Categorías</h1>
+                <div class="boxes">
+                    <div class="box">
+                        <i class="fa-solid fa-temperature-empty"></i>
+                        <h2>Sensores</h2>
+                        <p>Detectan cambios en el entorno y envían esa información a la placa para que pueda actuar según los datos recibidos.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Microcontroladores</h2>
+                        <p>Funcionan como el cerebro de la placa, ejecutando el código que controla los componentes.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <h2>Kits</h2>
+                        <p>Conjuntos de componentes y materiales para experimentar o desarrollar proyectos completos desde cero.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <h2>Módulos</h2>
+                        <p>Componentes externos ya integrados que se conectan fácilmente a la placa para ampliar sus funciones.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h2>Herramientas</h2>
+                        <p>Objetos que se usan para armar, probar y conectar proyectos, facilitando el trabajo con componentes electrónicos.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                     <div class="box">
+                        <i class="fa-solid fa-gift"></i>
+                        <h2>Accesorios</h2>
+                        <p>Elementos complementarios que amplían los proyectos, permitiendo agregar funciones o proteger el montaje.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+    <h2>Nuestros Productos</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="/img/600_750-EM9603_1.jpg" alt="Sensor DHT11">
+        <h3>Sensor DHT11</h3>
+        <p class="precio">$3500</p>
+        <p>Sensor de temperatura y humedad</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/servo-tower-pro-sg90-9g.jpg" alt="Servo motor sg90">
+        <h3>Servo motor sg90</h3>
+        <p class="precio">$2700</p>
+        <p>Servomotor pequeño de 180°.</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/D_NQ_NP_693235-MLA52961052972_122022-O.webp" alt="LCD 16x2 I2C">
+        <h3>LCD 16x2 I2C</h3>
+        <p class="precio">$4200</p>
+        <p>Pantalla alfanumérica con conexión simplificada</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/31dnjbfaigl.jpg" alt="AMS1117 3.3V">
+        <h3>AMS1117 3.3V</h3>
+        <p class="precio">$1500</p>
+        <p>Regulador de voltaje a 3.3V.</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/Arduino-Uno-R3-SMD-with-CH340-Chipset-Clone-Includes-USB-Cable_6afc41ec-5ef9-435a-96c6-877d66e1976d_1.524aeba9aa11757c4a5fac69370e8ea5.webp" alt="Arduino UNO">
+        <h3>Arduino UNO</h3>
+        <p class="precio">$5500</p>
+        <p>Placa de desarrollo para proyectos básicos.</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/TQFP_32_t.jpg" alt="ATmega328P">
+        <h3>ATmega328P</h3>
+        <p class="precio">$4000</p>
+        <p>Microcontrolador usado en el Arduino UNO.</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/raspberry-pi-pico-h-rp2040-arm-cortex-m0-with-headers.webp" alt="Raspberry Pi Pico">
+        <h3>Raspberry Pi Pico</h3>
+        <p class="precio">$6800</p>
+        <p>Microcontrolador de doble núcleo de Raspberry.</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="/img/lote-100-x-diodo-rectificador-1n4007-1000v-1a-itytarg.jpg" alt="Diodo 1N4007">
+        <h3>Diodo 1N4007</h3>
+        <p class="precio">$1200</p>
+        <p>Deja pasar corriente en un solo sentido.</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+    </section>
+
+    <main>
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    </main>
+
+    <footer>
+    <p>OhmStore, acompañando tus proyectos.</p>
+     <div class="redes">
+       <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+       <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+       <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+       <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+
+ <script src="/JS/script.js"></script>
+</body>
+</html>
